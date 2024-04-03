@@ -1,8 +1,10 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
+import clear from "clear";
 import chalk from "chalk";
 let myBalace = 10000;
 let myPin = 1234;
+clear();
 console.log(chalk.blue.bold.italic("\n \t<----------------WELCOME-------------->\n"));
 let pinAnswer = await inquirer.prompt([
     {
